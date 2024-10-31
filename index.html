@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Nguyễn Đăng Long</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li>
+                <li><a href="#" onclick="showSection('feedback')">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="content-section">
+        <div class="intro">
+            <div class="intro-text">
+                <h2>Hi</h2>
+                <h3>About Me</h3>
+                <p>Mình là Long, mình năm nay 19t, mình đang là sinh viên của trường Đại Học Thủ Đô Hà Nội,
+                    mình đang theo học chuyên ngành CNTT, một người đam mê công nghệ và luôn tò mò khám phá những điều mới lạ trong thế giới kỹ thuật số.
+                    Với ước mơ trở thành một hacker, mình đang từng bước trau dồi kiến thức về an ninh mạng và kỹ năng lập trình.
+                    Mình tin rằng, việc hiểu rõ các lỗ hổng bảo mật không chỉ giúp bảo vệ thông tin cá nhân mà còn góp phần vào việc xây dựng một môi trường mạng an toàn hơn cho mọi người.
+                    Ngoài đam mê công nghệ, mình cũng thích đọc sách và tham gia các khóa học trực tuyến để luôn cập nhật các xu hướng mới.</p>
+                <div class="social-links">
+                    <a href="https://github.com/longcsh" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100037289356934&mibextid=LQQJ4d" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/viuow_12?igsh=MWpsZ293NW91MDFsZg%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <img src="https://pbs.twimg.com/media/GbPjOV0aUAAcGUt?format=jpg&name=medium" alt="Avatar" class="avatar">
+        </div>
+    </div>
+
+    <div id="skills" class="content-section" style="display:none;">
+        <h2>Kỹ Năng</h2>
+        <div class="skill">
+            <span>HTML</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>CSS</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Photoshop/Illustrator</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Microsoft Office</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hobbies" class="content-section" style="display:none;">
+        <h2>Sở Thích</h2>
+        <h3>Đọc Sách</h3>
+        <p>Mình khá yêu thích việc đọc sách, nhất là những quyển liên quan đến Lịch Sử. Việc đọc những quyển sách lịch
+            sử về đất nước còn giúp mình hiểu rõ hơn về những giá trị văn hóa truyền thống và phong tục tập quán của ông
+            cha ta. Mỗi trang sách là một phần ký ức sống động, tái hiện lại những cuộc chiến đấu bảo vệ đất nước, những
+            chiến công lẫy lừng của dân tộc, hay những giai đoạn phát triển đầy thử thách.
+            Điều đó không chỉ giúp mình thêm tự hào về nguồn gốc của mình mà còn truyền cảm hứng để sống có trách nhiệm
+            hơn, góp phần vào sự phát triển của đất nước hôm nay và mai sau.</p>
+        <h3>Ngủ Nướng</h3>
+        <p>Ngoài đọc sách ra mình còn thích ngủ nướng nữa. Ngủ nướng là một sở thích mà có lẽ ai cũng từng trải qua,
+            nhất là vào những ngày cuối tuần hay khi thời tiết se lạnh. Sau một tuần làm việc căng thẳng, việc được nằm
+            dài trên giường thêm chút nữa, tận hưởng cảm giác ấm áp và thoải mái thật sự là một niềm vui nhỏ nhưng ý
+            nghĩa.
+            Ngủ nướng không chỉ giúp mình nạp lại năng lượng mà còn là khoảng thời gian để thả lỏng đầu óc, không cần lo
+            nghĩ nhiều về công việc hay học tập. Tuy vậy, mình vẫn cố gắng cân bằng sở thích này để không làm ảnh hưởng
+            đến sinh hoạt hàng ngày.</p>
+        <h3>Foodtour</h3>
+        <p>ơn nữa mình còn có một đam mê mãnh liệt với ẩm thực, mình và những người bạn hay tạo ra cuộc hành trình foodtour
+            hay có thể gọi vui là hành trình “ăn sập” thế giới ẩm thực. Mỗi lần đi, mình đều lên danh sách dài dằng dặc những món phải thử cho bằng hết, từ các món ăn đường phố cho đến những quán nổi tiếng.
+            Mục tiêu cuối cùng là bụng no, tâm trạng vui vẻ và, tất nhiên, bộ sưu tập hình ảnh đồ ăn phải tăng thêm đáng kể! Một số bạn đi du lịch để ngắm cảnh, còn mình thì đi vì… quán ăn. Mỗi món ngon khám phá được là một chiến công nho nhỏ, và mình tự hào rằng mình có thể trở thành “bản đồ sống” khi có ai cần địa chỉ ăn ngon.</p>
+    </div>
+
+    <div id="feedback" class="content-section" style="display:none;">
+        <h2>Phản Hồi</h2>
+        <form id="feedback-form">
+            <div>
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="comment">Đánh Giá:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>LongDang</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Ẩn tất cả các phần
+            });
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block'; // Hiển thị phần được chọn
+            }
+        }
+
+        document.getElementById('feedback-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Ngăn chặn gửi biểu mẫu
+            alert('Cảm ơn bạn đã gửi phản hồi!');
+        });
+
+        const snowflakeCount = 100; // Số lượng bông tuyết
+        const snowContainer = document.body; // Nơi chứa bông tuyết
+        
+        for (let i = 0; i < snowflakeCount; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerHTML = '❄'; // Biểu tượng bông tuyết
+            snowflake.style.left = Math.random() * 100 + 'vw'; // Đặt vị trí ngẫu nhiên
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Thay đổi tốc độ rơi ngẫu nhiên
+            snowflake.style.fontSize = Math.random() * 1 + 0.5 + 'em'; // Kích thước bông tuyết ngẫu nhiên
+            snowContainer.appendChild(snowflake);
+    
+            // Xóa bông tuyết khi nó đã rơi xuống
+            snowflake.addEventListener('animationend', () => {
+                snowflake.remove();
+            });
+        }
+    </script>
+</body>
+</html>

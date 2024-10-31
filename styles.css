@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2e8b57, #b2e0d7);
+    color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.content-section {
+    padding: 20px;
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width: 900px; /* Tùy chọn: giới hạn chiều rộng tối đa */
+    margin: 80px auto; /* Canh giữa và tạo khoảng cách với header */
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+}
+
+.intro h2, .intro h3 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.intro h3 {
+    margin-top: 10px;
+    font-size: 34px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 28px;
+    color: #ffff00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+}
+
+.skill {
+    margin-bottom: 15px; /* Khoảng cách giữa các kỹ năng */
+}
+
+.progress-bar {
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 5px; /* Khoảng cách giữa tên kỹ năng và thanh tiến độ */
+}
+
+.progress {
+    background: #4caf50;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+form div {
+    margin-bottom: 15px; /* Khoảng cách giữa các trường nhập */
+}
+
+input, textarea {
+    width: 100%; /* Chiều rộng đầy đủ */
+    padding: 10px; /* Padding cho trường nhập */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Hiệu ứng hover */
+}
+
+/* Hiệu ứng tuyết rơi */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 1em; /* Kích thước bông tuyết */
+    opacity: 0.8;
+    pointer-events: none; /* Không cho phép tương tác */
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
